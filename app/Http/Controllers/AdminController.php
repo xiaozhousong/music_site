@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Album;
 
 class AdminController extends Controller
 {
@@ -23,6 +24,9 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin');
+        $albums = Album::all();
+        return view('admin', ['albums' => $albums]);
     }
+
+    
 }

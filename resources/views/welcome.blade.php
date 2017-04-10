@@ -4,6 +4,6 @@
 
 @section('content')
 
-<h1>THIS IS USER VIEW CONTENT</h1>
+
 
 @endsection

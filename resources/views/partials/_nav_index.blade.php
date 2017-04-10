@@ -14,7 +14,7 @@
     <div class="collapse navbar-collapse" id="topNavBar">
         <ul class="nav navbar-nav">
           <li class="">
-            <a href="{{ url('/') }}">
+            <a href="{{ url('/albums') }}">
               <span class="glyphicon glyphicon-cd" aria-hidden="true"></span>&nbsp;
               Albums
             </a>

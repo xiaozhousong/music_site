@@ -15,9 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/albums', 'AlbumController@albums')->name('albums');
+Route::get('details/{AlbumId}', 'AlbumController@details');
 
 Route::prefix('admin')->group(function(){
 	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
