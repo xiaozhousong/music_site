@@ -23,3 +23,16 @@ body{
 .textcolor{
   color: white;
 }
+
+/*  bhoechie tab */
+
+
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+  display: none;
+}
+
+.thumbnail .caption {
+    padding: 9px;
+    color: #fff;
+}

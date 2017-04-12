@@ -27,6 +27,8 @@ class AdminController extends Controller
         $albums = Album::all();
         return view('admin', ['albums' => $albums]);
     }
+    
+
 
     
 }
