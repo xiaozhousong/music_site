@@ -36,3 +36,12 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     padding: 9px;
     color: #fff;
 }
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #ff8a44;
+    color: white;
+}

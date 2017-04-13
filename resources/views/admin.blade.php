@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.after_login')
 
 @section('content')
 
@@ -41,7 +41,7 @@
                 <div class="bhoechie-tab-content active">
                     
                     <h2>All albums</h2>
-                    <h3>Please click <a href = "" class="" role="button">here</a> 
+                    <h3>Please click <a href = "{{ route('admin.addAlbum')  }}" class="" role="button">here</a> 
                     if you want to add a album
                     </h3>
 
@@ -69,12 +69,15 @@
                               <td>{{$album->year}}</td>
                               <td>{{$album->created_at}}</td>
                               <td>{{$album->updated_at}}</td>
+                              
                               <td><a href = "{{url('details/'.$album->id)}}" class="btn btn-default" role="button">Details</a>
                               </td>
-                              <td><a href = "{{url('details/'.$album->id)}}" class="btn btn-default" role="button">Edited</a>
+                              
+
+                              <td><a href = "{{url('admin/edit_album/'.$album->id)}}" class="btn btn-default" role="button">Edit</a>
                               </td>
-                              <td><a href = "{{url('details/'.$album->id)}}" class="btn btn-default" role="button">Delete</a>
-                              </td>
+                              
+                              
 
                             </tr>
                             

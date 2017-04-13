@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts/after_login')
 
 @section('title', '- IndexPage')
 

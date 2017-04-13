@@ -7,7 +7,9 @@
 
     @include('partials._nav_index')   
       
-      <div class="container"> 
+      <div class="container">
+
+      @include('partials._messages')
 	      
 	      <!-- {{ Auth::check() ? "Logged In" : "Logged Out"}} -->
 

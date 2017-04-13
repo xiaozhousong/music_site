@@ -1,9 +1,7 @@
-@extends('layouts/master_index')
+@extends('layouts.before_login')
 
 @section('title', '- IndexPage')
 
 @section('content')
-
-
 
 @endsection
