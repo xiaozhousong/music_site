@@ -22,6 +22,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/albums', 'AlbumController@albums')->name('albums');
 Route::get('details/{AlbumId}', 'AlbumController@details');
+Route::post('/comment_store', 'CommentController@store')->name('comment.store');
 
 Route::prefix('admin')->group(function(){
 	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');

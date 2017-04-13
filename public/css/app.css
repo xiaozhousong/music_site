@@ -45,3 +45,40 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     background-color: #ff8a44;
     color: white;
 }
+
+.author-image{
+
+ 
+   
+  background: #dddddd;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  float: left;
+}
+.author-name{
+  float: left;
+  margin: 5px;
+  margin-left: 15px;
+}
+.author-name>h4{
+  margin: 5px 0px;
+}
+.author-time{
+  font-size: 11px;
+  font-style: italic;
+  color: #aaa;
+}
+.comment{
+  margin-bottom: 35px;
+}
+.comment-content{
+  clear: both;
+  margin-left: 65px;
+  font-size: 16px;
+
+}
+.comments-title>span{
+  margin-right: 15px;
+
+}
