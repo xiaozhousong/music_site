@@ -3,7 +3,7 @@
 
   @include('partials._head')
  
-  <body>
+  <body class="full2">
 
     @include('partials._nav_home')   
       

@@ -5,8 +5,16 @@
 
 <script src="{{ asset('js/parsley.min.js')}}" type="text/javascript"></script>
 
+<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+
 <script type="text/javascript">
-	$(document).ready(function() {
+	tinymce.init({
+		selector: 'textarea'
+	});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
     $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
         e.preventDefault();
         $(this).siblings('a.active').removeClass("active");
@@ -17,3 +25,4 @@
     });
 });
 </script>
+

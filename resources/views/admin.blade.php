@@ -16,7 +16,7 @@
                 <a href="#" class="list-group-item text-center">
                   <h4 class="glyphicon glyphicon-picture"></h4><br/>Reports
                 </a>
-                <a href="" class="list-group-item text-center active">
+                <a href="#" class="list-group-item text-center">
                   <h4 class="glyphicon glyphicon-cd"></h4><br/>Albums
                 </a>
                 <a href="#" class="list-group-item text-center">
@@ -35,7 +35,7 @@
             <div class="col-md-9 bhoechie-tab">
                 
                 <div class="bhoechie-tab-content">
-                    <h1>this is graphic report
+                    <h2>Reports</h2>
                 </div>
                
                 <div class="bhoechie-tab-content active">

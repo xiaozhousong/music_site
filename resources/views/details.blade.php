@@ -101,7 +101,7 @@
           
           <div class="comment-content">
             <h4>{{$comment->title}}</h4>
-            <p>{{$comment->body}}</p>
+            <p>{!!$comment->body!!}</p>
           </div>
         </div>
       
@@ -128,7 +128,7 @@
 
             <br>
 
-            {{Form::submit('Submit',array('class' => 'btn btn-success btn-lg btn-block'))}}
+            {{Form::submit('Submit',array('class' => 'btn btn-secondary btn-lg btn-block'))}}
    
           {!! Form::close() !!}
 

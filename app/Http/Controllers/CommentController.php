@@ -7,6 +7,7 @@ use App\Comment;
 use App\User;
 use App\Album;
 use Session;
+use Purifier;
 
 class CommentController extends Controller
 {
@@ -51,7 +52,7 @@ class CommentController extends Controller
 
         
         $comment->title = $request->title;
-        $comment->body = $request->body;
+        $comment->body = Purifier::clean($request->body);
         $comment->user_id = $request->user_id;
         $comment->album_id = $request->album_id;
 

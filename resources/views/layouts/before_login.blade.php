@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="full" lang="en">
+<html lang="en">
 
   @include('partials._head')
  
-  <body>
+  <body class="full">
 
     @include('partials._nav_index')   
       
