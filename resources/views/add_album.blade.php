@@ -24,7 +24,7 @@
 
         <br>
 
-        {{Form::submit('Submit',array('class' => 'btn btn-success btn-lg btn-block'))}}
+        {{Form::submit('Submit',array('class' => 'btn btn-success btn-block'))}}
 
 
     

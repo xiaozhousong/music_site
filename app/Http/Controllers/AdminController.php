@@ -5,6 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Album;
 use Session;
+use App\Http\Requests;
+use App\User;
+
+use Charts;
+use Khill\Lavacharts\Lavacharts;
+
+require 'vendor/autoload.php';
+
+use Carbon\Carbon;
 
 class AdminController extends Controller
 {
@@ -25,8 +34,22 @@ class AdminController extends Controller
      */
     public function index()
     {
+
         $albums = Album::all();
-        return view('admin', ['albums' => $albums]);
+
+        $lava = new Lavacharts; // See note below for Laravel
+
+        $popularity = $lava->DataTable();
+        $data = User::select("country as 0","name as 1")->get()->toArray();
+
+        $popularity->addStringColumn('Country')
+                   ->addStringColumn('Popularity')
+                   ->addRows($data);
+
+        $lava->GeoChart('Popularity', $popularity);
+
+
+        return view('admin', ['albums' => $albums],compact('lava'));
     }
 
     public function create()
@@ -87,6 +110,8 @@ class AdminController extends Controller
         Session::flash('success','The Album is successfully updated');
         return redirect('admin');
     }
+
+
     
 
     

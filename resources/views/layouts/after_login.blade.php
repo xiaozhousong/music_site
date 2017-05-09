@@ -7,7 +7,7 @@
 
     @include('partials._nav_home')   
       
-      <div class="container"> 
+      <div class="container" id="app"> 
 
       @include('partials._messages')
           

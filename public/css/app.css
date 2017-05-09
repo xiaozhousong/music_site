@@ -63,4 +63,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   margin-right: 15px;
 
 }
+#map {
+        height: 700px;
+      }
 
